@@ -206,7 +206,7 @@ class RNTwilioPhone {
     const subscriptions = [
       twilioPhoneEmitter.addListener(
         EventType.CallInvite,
-        ({ callSid, from }) => {
+        ({ callSid, _from }) => {
           // Incoming call is already reported to CallKit on iOS
           if (Platform.OS === 'android') {
             const uuid = ramdomUuid().toLowerCase();
