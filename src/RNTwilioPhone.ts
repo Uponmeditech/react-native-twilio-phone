@@ -212,7 +212,7 @@ class RNTwilioPhone {
             const uuid = ramdomUuid().toLowerCase();
             RNTwilioPhone.addCall({ uuid, sid: callSid, payload: null });
 
-            RNCallKeep.displayIncomingCall(uuid, from, 'Uponmeditech');
+            RNCallKeep.displayIncomingCall(uuid, 'Consultant Doctor', 'UpOn Meditech');
           }
         }
       ),
